@@ -1,8 +1,16 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+       'display': ['ModeSeven', 'ui-monospace', 'SFMono-Regular']
+      },
+      colors: {
+        'green-dark': '#00E7C0',
+        'green-light': '#00B492',
+      }
+    },
   },
   variants: {
     extend: {},
