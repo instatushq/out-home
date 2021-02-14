@@ -29,7 +29,7 @@ interface ContextState {
 
 export const defaultSettings: SettingsState = {
   openAtStartup: false,
-  appearance: Appearance.SYSTEM,
+  appearance: Appearance.DARK,
   showNotifications: true,
   playSound: false,
 }
@@ -73,7 +73,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
       if (typeof settingsStored?.appearance !== 'undefined') {
         setAppearance(settingsStored.appearance)
       } else {
-        setAppearance(Appearance.SYSTEM)
+        setAppearance(Appearance.DARK)
       }
 
       if (selectedStored?.length > 0) {
