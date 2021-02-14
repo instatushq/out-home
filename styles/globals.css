@@ -14,3 +14,15 @@
     font-display: swap;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {  
+  width: 0px;
+}
+
+input[type='checkbox']:focus + .track,
+input[type='checkbox']:active + .track {
+  box-shadow: 0 0 0 4px rgba(0, 231, 192, 0.2);
+}
