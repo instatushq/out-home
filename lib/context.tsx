@@ -55,7 +55,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
   useInterval(() => {
     selected.forEach((item) => {
       const service = allServices.get(item)
-      service.updateStatus(settings)
+      service?.updateStatus(settings)
     })
   }, 5000)
 

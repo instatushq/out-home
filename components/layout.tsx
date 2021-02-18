@@ -157,6 +157,7 @@ const Layout = ({ children }) => {
         </div>
       </main>
       <div className="absolute w-full h-1 -mb-10 md:-mb-2 md:w-1/2 md:left-1/2 bottom-24 md:bottom-28 line-horizontal" />
+      <div className="text-gray-100 text-gray-200 text-gray-300 text-gray-400 text-gray-500 text-gray-600 text-gray-700 text-gray-800 text-gray-900 anti-purge" />
       <style global jsx>
         {`
           .wrapper {
