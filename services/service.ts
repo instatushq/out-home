@@ -8,7 +8,7 @@ class Service {
   status: Status
   prevStatus: Status
 
-  updateStatus(settings: SettingsState) {
+  updateStatus(_settings: SettingsState) {
     console.log('base update status')
   }
 

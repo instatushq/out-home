@@ -4,7 +4,7 @@ import { SettingsState } from '../lib/types'
 export const raiseNativeNotification = (
   service: string,
   status: Status,
-  url: string,
+  _url: string,
   settings: SettingsState
 ) => {
   if (!settings.showNotifications) return

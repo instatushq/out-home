@@ -5,7 +5,7 @@ import DeselectService from './deselect'
 import SelectService from './select'
 import allServices from '../../../services'
 
-const all = Array.from(allServices).map(([key, name]) => key)
+const all = Array.from(allServices).map(([key, _name]) => key)
 
 const Selection = () => {
   const { searchInput, searchResults, selected } = useContext(Context)

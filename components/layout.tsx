@@ -3,7 +3,6 @@ import Head from 'next/head'
 import format from 'date-fns/format'
 
 import useWindowSize from '../lib/use-window-size'
-import useOs from '../lib/use-os'
 import InstatusIcon from '../svg/instatus-icon.svg'
 import DownloadIcon from '../svg/download.svg'
 import VideoIcon from '../svg/video.svg'
@@ -20,7 +19,6 @@ const Layout = ({ children }) => {
   const [repeatWidth, setRepeatWidth] = useState(0)
   const repeatIconsRef = useRef(null)
   const size = useWindowSize()
-  const os = useOs()
 
   useEffect(() => {
     const interval = setInterval(() => {

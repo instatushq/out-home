@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SettingsState } from '../../types'
+import { SettingsState } from '../../lib/types'
 
 import StatusPageService from '../base/statuspage'
 import Status from '../status'
