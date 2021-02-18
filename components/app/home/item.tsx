@@ -16,23 +16,16 @@ const ServiceItem = ({ value }: ServiceItemProps) => {
   const [isHover, setIsHover] = useState(false)
   const service = allServices.get(value)
 
-  const openServiceLink = (e: any) => {
-    e.preventDefault()
-  //  shell.openExternal(service.domain)
-  }
-
   return !service?.name ? (
     <div />
   ) : (
-    <div
+    <a
+      target="_blank"
+      href={service.domain}
       key={service.name}
       className="relative flex items-center justify-between px-4 py-3 transition duration-150 ease-in-out border border-gray-200 rounded-lg dark:border-gray-900 hover:border-gray-300 dark:hover:border-gray-800 focus:outline-none dark:focus:border-green-dark focus:dark-green-light"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      onClick={openServiceLink}
-      onKeyPress={openServiceLink}
-      role="button"
-      tabIndex={-1}
     >
       <span className="max-w-full truncate">{service.name}</span>
       <div
@@ -96,7 +89,7 @@ const ServiceItem = ({ value }: ServiceItemProps) => {
           </div>
         </div>
       )}
-    </div>
+    </a>
   )
 }
 
