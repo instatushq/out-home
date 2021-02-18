@@ -57,7 +57,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
       const service = allServices.get(item)
       service.updateStatus(settings)
     })
-}, 5000)
+  }, 5000)
 
   useEffect(() => {
     const initSettings = () => {
@@ -92,7 +92,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
 
     const newSettings = { ...settings, [name]: value }
     setSettings(newSettings)
-    saveState(settings, selected)
+    saveState(newSettings, selected)
   }
 
   const add = (item: string) => {

@@ -12,11 +12,7 @@ export const setAppearance = (mode?: Appearance) => {
       setLightMode()
       break
 
-    case Appearance.DARK:
-      setDarkMode()
-      break
-
-    default:
+    case Appearance.SYSTEM:
       if (
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -25,5 +21,10 @@ export const setAppearance = (mode?: Appearance) => {
       } else {
         setLightMode()
       }
+      break
+
+    default:
+      setDarkMode()
+      break
   }
 }
