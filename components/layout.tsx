@@ -161,16 +161,16 @@ const Layout = ({ children }) => {
       <style global jsx>
         {`
           .wrapper {
-            background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.80) ), url('/background.jpg') 50% 43%;
+            background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.80) ), url('https://out.instatus.com/background.jpg') 50% 43%;
             background-size: cover;
           }
   
           .line-horizontal {
-            background: url('/line-horizontal.png') repeat-x 50% 50%;
+            background: url('https://out.instatus.com/line-horizontal.png') repeat-x 50% 50%;
           }
 
           .line-vertical {
-            background: url('/line-vertical.png') repeat-y 50% 50%;
+            background: url('https://out.instatus.com/line-vertical.png') repeat-y 50% 50%;
           }
           .app {
             margin-left: -30px;
