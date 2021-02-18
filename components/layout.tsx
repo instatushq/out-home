@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
                 className="absolute hidden h-auto md:block left-1/2 top-4" 
                 style={{ width: 460, marginLeft: -230 }} 
               />
-              <div className="flex flex-col items-start justify-start font-mono text-black transform scale-50 bg-white border border-gray-800 shadow-2xl -translate-x-14 md:absolute md:scale-110 md:bottom-auto max-w-screen md:translate-x-0 dark:text-white dark:bg-black md:left-1/2 md:top-24 rounded-xl app">
+              <div className="flex flex-col items-start justify-start font-mono text-black transform scale-50 bg-white border border-gray-800 shadow-2xl -translate-x-14 md:absolute md:scale-110 md:bottom-auto max-w-screen md:translate-x-0 dark:text-white dark:bg-black md:left-1/2 md:top-32 rounded-xl app">
                 <AppHeader />
                 {children}
               </div>
@@ -88,7 +88,7 @@ const Layout = ({ children }) => {
             </a>
             <a 
               href="https://github.com/instatushq/out" 
-              className="z-10 flex items-center px-4 pt-3 pb-2 mt-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:pb-2 md:-ml-6 md:mt-4 md:pt-4 md:px-5 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
+              className="z-10 flex items-center px-4 pt-3 pb-2 mt-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:pb-3 md:-ml-6 md:mt-4 md:pt-4 md:px-5 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
             >
               <VideoIcon className="w-5 h-5 mr-4 -mt-1 -ml-1 text-white transition duration-150 ease-in-out fill-current md:w-6 md:h-6 group-hover:text-black" />
               Watch intro video
