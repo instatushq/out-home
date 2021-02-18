@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: 'ModeSeven';
-    src: url('/fonts/ModeSeven.eot');
-    src: url('/fonts/ModeSeven.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/ModeSeven.woff2') format('woff2'),
-        url('/fonts/ModeSeven.woff') format('woff'),
-        url('/fonts/ModeSeven.ttf') format('truetype');
+    src: url('/out/fonts/ModeSeven.eot');
+    src: url('/out/fonts/ModeSeven.eot?#iefix') format('embedded-opentype'),
+        url('/out/fonts/ModeSeven.woff2') format('woff2'),
+        url('/out/fonts/ModeSeven.woff') format('woff'),
+        url('/out/fonts/ModeSeven.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
