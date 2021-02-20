@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 const LoadingScreen = ({ isLoaded }) => (
-  <div className={`fixed top-0 left-0 flex items-center justify-center w-screen h-screen transition duration-300 ease-in-out bg-black ${isLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}>
+  <div className={`fixed top-0 left-0 flex items-center justify-center w-screen h-screen bg-black ${!isLoaded ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none transition ease-in-out duration-300'}`}>
     <InstatusIcon className="w-12 h-12 fill-current text-green-dark" />
   </div>
 )
