@@ -13,12 +13,14 @@ import LinuxIcon from '../svg/linux.svg'
 import GithubIcon from '../svg/github.svg'
 import InstatusLogo from '../svg/instatus-logo.svg'
 import AppHeader from '../components/app/header'
+import useOs from '../lib/use-os'
 
 const Layout = ({ children }) => {
   const [date, setDate] = useState(new Date())
   const [repeatWidth, setRepeatWidth] = useState(0)
   const repeatIconsRef = useRef(null)
   const size = useWindowSize()
+  const os = useOs()
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -79,13 +81,33 @@ const Layout = ({ children }) => {
             </div>
           </div>
           <div className="absolute bottom-0 flex flex-col items-start justify-end w-full pb-32 pl-10 md:text-lg md:pl-0 md:pb-24 md:h-1/2 md:relative md:bottom-auto">
-            <a 
-              href="https://github.com/instatushq/out" 
-              className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
-            >
-              <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
-              Get on mac OS
-            </a>
+            {os === 'Mac' && (
+              <a 
+                href="/download/mac" 
+                className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
+              >
+                <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
+                Get on mac OS
+              </a>
+            )}
+            {os === 'Windows' && (
+              <a 
+                href="/download/windows" 
+                className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
+              >
+                <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
+                Get on Windows
+              </a>
+            )}
+            {os === 'Linux' && (
+              <a 
+                href="/download/linux" 
+                className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
+              >
+                <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
+                Get on Linux
+              </a>
+            )}
             <a 
               href="https://github.com/instatushq/out" 
               className="z-10 flex items-center px-4 pt-3 pb-2 mt-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:pb-3 md:-ml-6 md:mt-4 md:pt-4 md:px-5 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
@@ -112,21 +134,21 @@ const Layout = ({ children }) => {
         <div className="relative flex w-full h-screen md:items-end md:justify-end md:w-1/2">
           <div className="absolute z-10 flex flex-row-reverse items-center -mb-2 md:left-auto -left-2 md:flex-row bottom-12 md:-right-8 md:bottom-28">
             <a
-              href="https://github.com/instatushq/out" 
+              href="/download/mac" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
               <AppleIcon className="w-6 h-6 fill-current" />
             </a>
             <a 
-              href="https://github.com/instatushq/out" 
+              href="/download/windows" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
               <MicrosoftIcon className="w-6 h-6 fill-current" />
             </a>
             <a 
-              href="https://github.com/instatushq/out" 
+              href="/download/linux" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
@@ -140,14 +162,14 @@ const Layout = ({ children }) => {
               <GithubIcon className="w-6 h-6 fill-current" />
             </a>
             <a 
-              href="https://github.com/instatushq/out" 
+              href="https://instatus.com" 
               target="_blank" 
               className="hidden px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark md:block"
             >
               <InstatusLogo className="py-px fill-current h-7" />
             </a>
             <a 
-              href="https://github.com/instatushq/out" 
+              href="https://instatus.com" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark md:hidden"
             >
