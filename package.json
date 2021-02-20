@@ -19,6 +19,7 @@
     "postcss": "^8.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-loading-screen-hoc": "^0.3.0",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
