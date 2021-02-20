@@ -68,16 +68,16 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <div className="absolute left-0 right-0 h-1 top-12 md:w-5/12 md:top-32 line-horizontal" />
-      <main className="container relative flex flex-col items-center justify-between h-screen px-8 py-4 mx-auto mt-5 antialiased text-white md:flex-row items-between">
+      <main className="container relative flex flex-col items-center justify-between h-screen px-8 py-4 mx-auto mt-5 antialiased text-white lg:px-12 md:flex-row items-between">
         <div className="flex flex-col items-center w-full h-full md:w-1/2">
           <div className="flex flex-col w-full md:h-1/2">
-            <div className="absolute top-0 right-0 w-1 h-screen -mt-4 left-12 md:left-8 line-vertical" />
-            <div className="absolute z-10 flex items-center -mt-4 -ml-4 fill-current md:-mt-2 left-12 md:left-8 md:-ml-5 top-8 md:top-24">
+            <div className="absolute top-0 right-0 w-1 h-screen -mt-4 left-12 md:left-8 lg:left-12 line-vertical" />
+            <div className="absolute z-10 flex items-center -mt-4 -ml-4 fill-current lg:-mt-2 left-12 md:left-8 lg:left-12 md:-ml-5 top-8 md:top-24">
               <InstatusIcon className="z-10 w-8 h-8 ml-px fill-current md:w-10 md:h-10 text-green-dark" />
               <h2 className="ml-3 text-2xl lowercase md:text-3xl font-display">Instatus Out</h2>
             </div>
-            <div className="flex w-full mt-16 md:-ml-6 md:mt-56">
-              <h1 className="w-64 text-3xl text-left lowercase md:w-auto md:max-w-3xl md:text-5xl font-display">Monitor services in your menu bar</h1>
+            <div className="flex w-full mt-16 md:-ml-6 md:mt-40 xl:mt-56">
+              <h1 className="w-64 text-3xl text-left lowercase md:w-auto md:max-w-2xl lg:max-w-3xl md:text-4xl lg:text-5xl font-display">Monitor services in your menu bar</h1>
             </div>
           </div>
           <div className="absolute bottom-0 flex flex-col items-start justify-end w-full pb-32 pl-10 md:text-lg md:pl-0 md:pb-24 md:h-1/2 md:relative md:bottom-auto">
@@ -115,17 +115,17 @@ const Layout = ({ children }) => {
               <VideoIcon className="w-5 h-5 mr-4 -mt-1 -ml-1 text-white transition duration-150 ease-in-out fill-current md:w-6 md:h-6 group-hover:text-black" />
               Watch intro video
             </a>
-            <div className="hidden mt-8 text-lg lowercase md:-ml-4 md:mt-24 font-display md:block">
-              <p className="flex items-center">
-                <div className="h-px mr-4 bg-white opacity-50 w-9" />
+            <div className="hidden mt-8 -ml-2 text-lg lowercase xl:-ml-4 md:mt-24 font-display md:block">
+              <p className="flex items-center truncate">
+                <div className="w-6 h-px mr-4 bg-white opacity-50 xl:w-9" />
                 Select services you depend on
               </p>
-              <p className="flex items-center mt-4">
-                <div className="h-px mr-4 bg-white opacity-50 w-9" />
+              <p className="flex items-center mt-4 truncate">
+                <div className="w-6 h-px mr-4 bg-white opacity-50 xl:w-9" />
                 Check their status in your menu bar
               </p>
-              <p className="flex items-center mt-4">
-                <div className="h-px mr-4 bg-white opacity-50 w-9" />
+              <p className="flex items-center mt-4 truncate">
+                <div className="w-6 h-px mr-4 bg-white opacity-50 xl:w-9" />
                 Get notified when they change their status
               </p>
             </div>
@@ -199,12 +199,20 @@ const Layout = ({ children }) => {
             width: 460px;
             height: 400px;
           }
-          @media only screen and (min-width: 600px) {
+          @media only screen and (min-width: 1280px) {
             .repeat-icons {
               width: 29%;
             }
-          .app {
-            margin-left: -230px;
+          }
+          @media only screen and (min-width: 600px) and (max-width: 1281px) {
+            .repeat-icons {
+              width: 21%;
+            }
+          }
+          @media only screen and (min-width: 600px) {
+            .app {
+              margin-left: -230px;
+            }
           }
         `}
       </style>
