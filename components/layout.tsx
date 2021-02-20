@@ -201,7 +201,7 @@ const Layout = ({ children }) => {
           }
           @media only screen and (min-width: 1280px) {
             .repeat-icons {
-              width: 29%;
+              width: 26%;
             }
           }
           @media only screen and (min-width: 600px) and (max-width: 1281px) {
