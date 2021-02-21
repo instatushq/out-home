@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
           <div className="absolute bottom-0 flex flex-col items-start justify-end w-full pb-32 pl-10 md:text-lg md:pl-0 md:pb-24 md:h-1/2 md:relative md:bottom-auto">
             {os === 'Mac' && (
               <a 
-                href="/download/mac" 
+                href="/out/download/mac" 
                 className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
               >
                 <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
             )}
             {os === 'Windows' && (
               <a 
-                href="/download/windows" 
+                href="/out/download/windows" 
                 className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
               >
                 <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
@@ -101,7 +101,7 @@ const Layout = ({ children }) => {
             )}
             {os === 'Linux' && (
               <a 
-                href="/download/linux" 
+                href="/out/download/linux" 
                 className="z-10 flex items-center px-4 py-3 -ml-2 text-white uppercase transition duration-150 ease-in-out bg-black rounded-lg shadow-lg md:-ml-6 md:px-5 md:py-4 font-display hover:shadow-2xl hover:bg-green-dark hover:text-black group"
               >
                 <DownloadIcon className="w-5 h-5 mr-4 -mt-1 -ml-2 text-white transition duration-150 ease-in-out fill-current md:w-7 md:h-7 group-hover:text-black" />
