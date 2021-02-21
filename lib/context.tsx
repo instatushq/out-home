@@ -34,7 +34,7 @@ export const defaultSettings: SettingsState = {
   playSound: false,
 }
 
-const defaultSelected = [Instatus.name, Vercel.name, Github.name, Dropbox.name, Zoom.name, Cloudflare.name]
+const defaultSelected = ['Instatus', 'Vercel', 'Github', 'Dropbox', 'Zoom', 'Cloudflare']
 
 export const Context = createContext<Partial<ContextState>>({})
 
