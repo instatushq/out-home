@@ -7,17 +7,17 @@ module.exports = {
     return [
       {
         source: '/download/mac',
-        destination: 'https://github.com/instatushq/out/suites/2050715585/artifacts/42142305',
+        destination: 'https://github.com/instatushq/out/suites/2089374860/artifacts/42365290',
         permanent: false,
       },
       {
         source: '/download/windows',
-        destination: 'https://github.com/instatushq/out/suites/2050715585/artifacts/42142306',
+        destination: 'https://github.com/instatushq/out/suites/2089264035/artifacts/42362216',
         permanent: false,
       },
       {
         source: '/download/linux',
-        destination: 'https://github.com/instatushq/out/suites/2050715585/artifacts/42142304',
+        destination: 'https://github.com/instatushq/out/suites/2089264035/artifacts/42362214',
         permanent: false,
       }
     ]
