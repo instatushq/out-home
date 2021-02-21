@@ -99,7 +99,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
     var array = [...selected]
     var index = array.indexOf(item)
     if (index === -1) {
-      setSelected(selected.concat(item))
+      setSelected(oldArray => [...oldArray, item])
       saveState(settings, selected)
     }
   }
