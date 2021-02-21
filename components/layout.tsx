@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         <title>Instatus Out — Monitor services in your menu bar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="absolute top-0 z-10 flex items-center justify-end w-full h-full lg:fixed md:bg-black md:h-8">
+      <div className="absolute top-0 z-10 flex items-center justify-end w-full h-full overflow-hidden lg:fixed md:bg-black md:h-8 max-w-screen md:overflow-visible">
         <div ref={repeatIconsRef} className="flex w-full md:items-center md:justify-end md:h-full md:w-auto md:mr-5 repeat-icons">
           <div className="mr-4 md:flex md:items-center md:justify-around md:flex-grow md:h-full">
             <div className="md:flex md:items-center md:justify-center md:h-full md:relative">
