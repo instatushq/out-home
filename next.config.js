@@ -7,12 +7,12 @@ module.exports = {
     return [
       {
         source: '/download/mac',
-        destination: 'https://github.com/instatushq/out/suites/2092358104/artifacts/42442727',
+        destination: 'https://github.com/instatushq/out/releases/download/v1.0.6/Instatus.Out-1.0.6-mac.dmg',
         permanent: false,
       },
       {
         source: '/download/windows',
-        destination: 'https://github.com/instatushq/out/suites/2092358104/artifacts/42442728',
+        destination: 'https://github.com/instatushq/out/releases/download/v1.0.6/Instatus.Out.Setup.1.0.6.exe',
         permanent: false,
       },
       {
