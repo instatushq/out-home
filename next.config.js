@@ -19,6 +19,11 @@ module.exports = {
         source: '/download/linux',
         destination: 'https://github.com/instatushq/out/suites/2092358104/artifacts/42442726',
         permanent: false,
+      },
+      {
+        source: '/video',
+        destination: 'https://youtu.be/DJZ9YgMYBno',
+        permanent: false,
       }
     ]
   },
