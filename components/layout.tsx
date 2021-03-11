@@ -135,21 +135,21 @@ const Layout = ({ children }) => {
         <div className="relative flex w-full h-screen md:items-end md:justify-end md:w-1/2">
           <div className="absolute z-10 flex flex-row-reverse items-center -mb-2 md:left-auto -left-2 md:flex-row bottom-12 md:-right-8 md:bottom-28">
             <a
-              href="/download/mac" 
+              href="/out/download/mac" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
               <AppleIcon className="w-6 h-6 fill-current" />
             </a>
             <a 
-              href="/download/windows" 
+              href="/out/download/windows" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
               <MicrosoftIcon className="w-6 h-6 fill-current" />
             </a>
             <a 
-              href="/download/linux" 
+              href="/out/download/linux" 
               target="_blank" 
               className="px-4 py-2 text-white transition duration-100 ease-in-out md:px-5 hover:text-green-dark"
             >
