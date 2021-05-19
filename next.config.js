@@ -7,7 +7,7 @@ module.exports = {
     return [
       {
         source: '/download/mac',
-        destination: 'https://github.com/instatushq/out/releases/download/v1.0.8/Instatus.Out-1.0.8-mac.dmg',
+        destination: 'https://apps.apple.com/app/instatus-out/id1552633430?mt=12',
         permanent: false,
       },
       {
